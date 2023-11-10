@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+
+    <EditText
+        android:id="@+id/InputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Név"
+        android:inputType="text"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/InputCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputName"
+        android:hint="Ország"
+        android:inputType="text"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/InputPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputCountry"
+        android:hint="lakosság"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/BtnInputAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputPopulation"
+        android:text="Felvétel"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/BtnInputBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnInputAdd"
+        android:text="Vissza"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
